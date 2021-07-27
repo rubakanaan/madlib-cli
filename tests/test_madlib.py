@@ -19,7 +19,15 @@ def test_parse_template():
     assert actual_stripped == expected_stripped
     assert actual_parts == expected_parts
 
+# def test_parse_template2():
+#     actual_stripped, actual_parts = parse_template(
+#         "It was a {Adjectifghjklve} and {Adjdfghjkective} {Noulkjhghjn}."
+#     )
+#     expected_stripped = "It was a {} and {} {}."
+#     expected_parts = ("Adjectifghjklve", "Adjdfghjkective", "Noulkjhghjn")
 
+#     assert actual_stripped == expected_stripped
+#     assert actual_parts == expected_parts
 # @pytest.mark.skip("pending")
 def test_merge():
     actual = merge("It was a {} and {} {}.", ("dark", "stormy", "night"))
